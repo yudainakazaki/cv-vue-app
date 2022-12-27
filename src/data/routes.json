@@ -1,0 +1,46 @@
+{
+    "routes": [
+        {
+            "url": {
+                "name": "home"
+            },
+            "label": "routes.home"
+        },
+        {
+            "url": {
+                "name": "education"
+            },
+            "label": "routes.education"
+        },
+        {
+            "url": {
+                "name": "experience"
+            },
+            "label": "routes.experience"
+        },
+        {
+            "url": {
+                "name": "skills"
+            },
+            "label": "routes.skills"
+        },
+        {
+            "url": {
+                "name": "projects"
+            },
+            "label": "routes.projects"
+        },
+        {
+            "url": {
+                "name": "contracts"
+            },
+            "label": "routes.contracts"
+        },
+        {
+            "url": {
+                "name": "funclub"
+            },
+            "label": "routes.funclub"
+        }
+    ]
+}
