@@ -5,11 +5,11 @@ import { onMounted } from 'vue';
 
 <template>
   <div class="home">
-    <!-- <div class="home__tags">
-      <label class="home__tags__tag"><a href="https://www.instagram.com/explore/tags/tokyo" target="_blank" class="link">#Tokyo</a></label>
+    <div class="home__tags">
+      <!-- <label class="home__tags__tag"><a href="https://www.instagram.com/explore/tags/tokyo" target="_blank" class="link">#Tokyo</a></label>
       <label class="home__tags__tag">#✈︎✈︎✈︎✈︎✈︎✈︎✈︎</label>
-      <label class="home__tags__tag"><a href="https://www.instagram.com/explore/tags/amsterdam" target="_blank" class="link">#Amsterdam</a></label>
-    </div> -->
+      <label class="home__tags__tag"><a href="https://www.instagram.com/explore/tags/amsterdam" target="_blank" class="link">#Amsterdam</a></label> -->
+    </div>
     <img src="../images/yudainakazaki.png" class="home__name">
     <img src="../images/top.png" alt="name" class="home__profile">
   </div>

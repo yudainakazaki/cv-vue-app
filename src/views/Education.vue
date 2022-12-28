@@ -15,7 +15,7 @@ import InfoCard from '../components/InfoCard.vue';
           GPA : 8.6 / 10 (As of December, 2022)
         </p>
         <span>
-          <a href="../docs/Grades.pdf" class="link" target="_blank">→ My transcript</a>
+          <a href="src/docs/Grades.pdf" class="link" target="_blank">→ My transcript</a>
         </span>
       </template>
       <template #logo>

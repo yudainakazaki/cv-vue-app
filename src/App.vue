@@ -25,6 +25,10 @@ onMounted(() => {
             {{ item.name }}
           </RouterLink>
         </nav>
+        <label class="header__nav__item">
+          <a href="src/docs/cv.pdf" target="_blank"
+            class="header__nav__item__label" title="CV">CV</a>
+        </label>
       </div>
       <div class="header__social-media">
         <SocialMedia :list-social-media="listSocialMedia" />
@@ -32,7 +36,7 @@ onMounted(() => {
     </header>
     <RouterView />
     <footer>
-      <div :class="['footer', {'footer--home': route.name === 'Home'}]">
+      <div class="footer">
         <label class="footer__label">
           ©︎yudainakazaki.com
           <a href="https://www.youtube.com/watch?v=v7BY5m2wYx4" class="no-text-decoration" target="_blank">🐤</a>
@@ -119,16 +123,12 @@ onMounted(() => {
 .footer {
   width: 100%;
   height: 90px;
-  position: relative;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-
-  &--home {
-    position: fixed;
-  }
 
   &__label {
     margin: auto 0;

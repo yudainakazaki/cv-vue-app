@@ -1,11 +1,12 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-    size?: string;
+    size: string;
     logo?: boolean;
     title?: string;
     subtitle1?: string;
     subtitle2?: string;
+    fixHeight?: boolean;
 }>();
 
 </script>
@@ -15,10 +16,11 @@ const props = defineProps<{
         'info-card',
         {
             'info-card--large': props.size === 'large',
-            'info-card--small': props.size === 'small'
+            'info-card--small': props.size === 'small',
+            'info-card--height-fixed': props.fixHeight
         }
     ]">
-        <h1 class="info-card__title">{{ props.title }}</h1> 
+        <h1 class="info-card__title">{{ props.title }}</h1>
         <div v-if=props.logo class="info-card__logo">
             <slot name="logo" />
         </div>
@@ -34,7 +36,7 @@ const props = defineProps<{
     height: fit-content;
     border-radius: $spacing-3;
     background-color: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
     padding: $spacing-6;
     position: relative;
 
@@ -58,7 +60,7 @@ const props = defineProps<{
         top: 0;
         right: 0;
     }
-    
+
     &__content {
         font-size: $font-small;
     }
@@ -70,5 +72,10 @@ const props = defineProps<{
     &--large {
         width: $width-8;
     }
+
+    &--height-fixed {
+        height: $width-2;
+    }
+
 }
 </style>
