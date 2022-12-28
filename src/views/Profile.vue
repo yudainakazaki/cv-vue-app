@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <main>
-    <div>Profile</div>
-  </main>
+  <div class=""></div>
+
 </template>
