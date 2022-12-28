@@ -15,12 +15,12 @@ import InfoCard from '../components/InfoCard.vue';
           GPA : 8.6 / 10 (As of December, 2022)
         </p>
         <span>
-          <a href="src/docs/Grades.pdf" class="link" target="_blank">→ My transcript</a>
+          <a href="../docs/Grades.pdf" class="link" target="_blank">→ My transcript</a>
         </span>
       </template>
       <template #logo>
         <a href="https://vu.nl/en" target="_blank">
-          <img src="src/images/vu.png" style="height: 50px;" alt="logo" />
+          <img src="../images/vu.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -33,7 +33,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://www.keio.ac.jp/en/" target="_blank">
-          <img src="src/images/keio.png" style="height: 50px;" alt="logo" />
+          <img src="../images/keio.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -46,7 +46,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://www.keio.ac.jp/en/" target="_blank">
-          <img src="src/images/ucr.png" style="height: 50px;" alt="logo" />
+          <img src="../images/ucr.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>

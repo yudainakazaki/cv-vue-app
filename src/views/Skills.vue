@@ -16,7 +16,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">JavaScript, TypeScript, Python, C++, C, Java, Scala, Matlab, R</p>
       </template>
       <template #logo>
-        <img src="src/images/cpp.png" style="height: 30px;" alt="logo" />
+        <img src="../images/cpp.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -30,7 +30,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">HTML, CSS, Vue.js, React, Redux, Redux-Saga, Node.js</p>
       </template>
       <template #logo>
-        <img src="src/images/frontend.png" style="height: 30px;" alt="logo" />
+        <img src="../images/frontend.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -44,7 +44,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">Figma</p>
       </template>
       <template #logo>
-        <img src="src/images/figma.png" style="height: 30px;" alt="logo" />
+        <img src="../images/figma.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>    
     <InfoCard
@@ -58,7 +58,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">Express.js, Django, Spring Boot</p>
       </template>
       <template #logo>
-        <img src="src/images/backend.png" style="height: 30px;" alt="logo" />
+        <img src="../images/backend.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -72,7 +72,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">Github, Gitlab, Docker</p>
       </template>
       <template #logo>
-        <img src="src/images/git.png" style="height: 30px;" alt="logo" />
+        <img src="../images/git.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -86,7 +86,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">Cypress.js, Selenium</p>
       </template>
       <template #logo>
-        <img src="src/images/test.png" style="height: 30px;" alt="logo" />
+        <img src="../images/test.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -100,7 +100,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">SQL, BigQuery, Firebase</p>
       </template>
       <template #logo>
-        <img src="src/images/database.png" style="height: 30px;" alt="logo" />
+        <img src="../images/database.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -114,7 +114,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">Pandas, Numpy, Selenium, bs4, Salesforce.com</p>
       </template>
       <template #logo>
-        <img src="src/images/data.png" style="height: 30px;" alt="logo" />
+        <img src="../images/data.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -128,7 +128,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="skills__card__content">English, Chinese, Spanish, Portuguese, Japanese</p>
       </template>
       <template #logo>
-        <img src="src/images/language.png" style="height: 30px;" alt="logo" />
+        <img src="../images/language.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
   </div>

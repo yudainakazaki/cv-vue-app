@@ -26,7 +26,7 @@ onMounted(() => {
           </RouterLink>
         </nav>
         <label class="header__nav__item">
-          <a href="src/docs/cv.pdf" target="_blank"
+          <a href="../docs/cv.pdf" target="_blank"
             class="header__nav__item__label" title="CV">CV</a>
         </label>
       </div>
