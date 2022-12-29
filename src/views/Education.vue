@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import InfoCard from '../components/InfoCard.vue';
+import grades from '../docs/Grades.pdf'
+
+const onGradesClick = () => {
+  window.open(grades);
+}
 </script>
 
 <template>
@@ -15,7 +20,7 @@ import InfoCard from '../components/InfoCard.vue';
           GPA : 8.6 / 10 (As of December, 2022)
         </p>
         <span>
-          <a href="./src/docs/Grades.pdf" class="link" target="_blank">→ My transcript</a>
+          <a :onclick="onGradesClick" class="link" target="_blank">→ My transcript</a>
         </span>
       </template>
       <template #logo>

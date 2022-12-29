@@ -45,10 +45,34 @@ import { onMounted } from 'vue';
     top: 35%;
     left: -40%;
     width: 69.5%;
+    animation: 2s ease-in 0s showUp;
+    transform-origin: left;
   }
 
   &__profile {
     width: 100%;
+    animation: 1s ease-out loadImage;
+  }
+}
+
+@keyframes loadImage {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>
