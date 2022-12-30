@@ -25,7 +25,7 @@ const onGradesClick = () => {
       </template>
       <template #logo>
         <a href="https://vu.nl/en" target="_blank">
-          <img src="../assets/images/vu.png" style="height: 50px;" alt="logo" />
+          <img src="../../public/images/vu.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -38,7 +38,7 @@ const onGradesClick = () => {
       </template>
       <template #logo>
         <a href="https://www.keio.ac.jp/en/" target="_blank">
-          <img src="../assets/images/keio.png" style="height: 50px;" alt="logo" />
+          <img src="../../public/images/keio.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -51,7 +51,7 @@ const onGradesClick = () => {
       </template>
       <template #logo>
         <a href="https://www.keio.ac.jp/en/" target="_blank">
-          <img src="../assets/images/ucr.png" style="height: 50px;" alt="logo" />
+          <img src="../../public/images/ucr.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>

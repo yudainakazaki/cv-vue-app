@@ -10,8 +10,8 @@ import { onMounted } from 'vue';
       <label class="home__tags__tag">#✈︎✈︎✈︎✈︎✈︎✈︎✈︎</label>
       <label class="home__tags__tag"><a href="https://www.instagram.com/explore/tags/amsterdam" target="_blank" class="link">#Amsterdam</a></label> -->
     </div>
-    <img src="../assets/images/yudainakazaki.png" class="home__name">
-    <img src="../assets/images/top.png" alt="name" class="home__profile">
+    <img src="../../public/images/yudainakazaki.png" class="home__name">
+    <img src="../../public/images/top.png" alt="name" class="home__profile">
   </div>
 </template>
 

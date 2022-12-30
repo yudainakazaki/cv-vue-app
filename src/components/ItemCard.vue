@@ -13,7 +13,7 @@ const props = defineProps<{
     <div class="item-card">
         <div class="item-card__thumbnail">
             <a :href="props.demo" target="_blank">
-                <img class="item-card__thumbnail__img" :src="props.thumbnail" alt="thumbnail" style="width: 100%;"> 
+                <img class="item-card__thumbnail__img" :src="`${props.thumbnail}`" alt="thumbnail" style="width: 100%;"> 
             </a>
         </div>
         <h2 class="item-card__title">{{ props.title }}</h2>

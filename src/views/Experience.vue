@@ -22,7 +22,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://payaut.com/" target="_blank">
-          <img src="../assets/images/payaut.jpeg" style="height: 50px;" alt="logo" />
+          <img src="../../public/images/payaut.jpeg" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -43,7 +43,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://www.fastretailing.com/eng/" target="_blank">
-          <img src="../assets/images/fr.png" style="height: 50px;" alt="logo" />
+          <img src="../../public/images/fr.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -65,7 +65,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://www.hr-force.co.jp/" target="_blank">
-          <img src="../assets/images/hrforce.jpeg" style="height: 50px;" alt="logo" />
+          <img src="../../public/images/hrforce.jpeg" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>

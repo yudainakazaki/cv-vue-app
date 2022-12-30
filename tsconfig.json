@@ -20,6 +20,7 @@
     "esModuleInterop": true, 
     "resolveJsonModule": true,
     "sourceMap": true,
+    "types": ["node"],
   },
   "references": [
     {
