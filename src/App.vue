@@ -48,7 +48,7 @@ onMounted(() => {
       <div :class="['footer', { 'footer--home': route.name === 'Home' }]">
         <label class="footer__label">
           ©︎yudainakazaki.com
-          <a href="https://www.youtube.com/watch?v=v7BY5m2wYx4" class="no-text-decoration" target="_blank">🐤</a>
+          <a href="https://www.youtube.com/watch?v=v7BY5m2wYx4" class="no-text-decoration" target="_blank" title="smile">🐤</a>
         </label>
       </div>
     </footer>

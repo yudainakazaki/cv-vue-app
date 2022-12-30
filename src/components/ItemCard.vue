@@ -13,7 +13,7 @@ const props = defineProps<{
     <div class="item-card">
         <div class="item-card__thumbnail">
             <a :href="props.demo" target="_blank">
-                <img class="item-card__thumbnail__img" :src="`${props.thumbnail}`" alt="thumbnail" style="width: 100%;"> 
+                <slot />
             </a>
         </div>
         <h2 class="item-card__title">{{ props.title }}</h2>
@@ -45,21 +45,6 @@ const props = defineProps<{
         height: $width-3;
         overflow: hidden;
         border-radius: $spacing-3;
-
-        &__img {
-            background-color: azure;
-            transform: scale(1);
-            width: 100%;
-            transition: transform .3s ease-in;
-            display: inline-block;
-            animation: 1s ease-out loadImage;
-
-            &:hover {
-                transform: scale(1.1);
-                transition: transform .3s ease-out;
-                cursor: pointer;
-            }
-        }
     }
 
     &__title {
@@ -96,20 +81,6 @@ const props = defineProps<{
                 transition: 0.6s;
             }
         }
-    }
-}
-
-@keyframes loadImage {
-    0% {
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    30% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
     }
 }
 
