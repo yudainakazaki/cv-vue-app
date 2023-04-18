@@ -30,7 +30,7 @@ const onGradesClick = () => {
       </template>
     </InfoCard>
     <InfoCard size="large" :logo="true" title="Keio University"
-      subtitle1="BA in Economics" subtitle2="April, 2015 - March, 2019" class="education__card">
+      subtitle1="BA in Economics" class="education__card">
       <template #content>
         <p class="education__card__content">
           I focused on microeconomics, and I studied Applied Economics in the group of Prof. Takanobu Nakajima. <br />
@@ -43,14 +43,14 @@ const onGradesClick = () => {
       </template>
     </InfoCard>
     <InfoCard size="large" :logo="true" title="University of California, Riverside"
-      subtitle1="Exchange" subtitle2="September, 2017 - July, 2018" class="education__card">
+      subtitle1="Exchange" class="education__card">
       <template #content>
         <p class="education__card__content">
-          I studied computer science, business, math, etc.
+          I studied computer science, business, math, etc as an exchange student.
         </p>
       </template>
       <template #logo>
-        <a href="https://www.keio.ac.jp/en/" target="_blank">
+        <a href="https://www.ucr.edu/" target="_blank">
           <img src="../../public/images/ucr.png" style="height: 50px;" alt="logo" />
         </a>
       </template>

@@ -61,7 +61,7 @@ import ItemCard from '../components/ItemCard.vue';
     width: 100%;
     transition: transform .3s ease-in;
     display: inline-block;
-    animation: 1s ease-out loadImage;
+    animation: 1.5s ease-out loadImage;
 
     &:hover {
       transform: scale(1.1);
@@ -76,7 +76,7 @@ import ItemCard from '../components/ItemCard.vue';
       opacity: 0;
       transform: scale(1.1);
   }
-  30% {
+  40% {
       opacity: 1;
       transform: scale(1.1);
   }
