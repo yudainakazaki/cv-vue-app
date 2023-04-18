@@ -5,53 +5,106 @@ import { onMounted } from 'vue';
 
 <template>
   <div class="home">
-    <div class="home__tags">
-      <!-- <label class="home__tags__tag"><a href="https://www.instagram.com/explore/tags/tokyo" target="_blank" class="link">#Tokyo</a></label>
-      <label class="home__tags__tag">#✈︎✈︎✈︎✈︎✈︎✈︎✈︎</label>
-      <label class="home__tags__tag"><a href="https://www.instagram.com/explore/tags/amsterdam" target="_blank" class="link">#Amsterdam</a></label> -->
+    <div class="home__main">
+      <img src="../../public/images/yudainakazaki.png" class="home__main__name">
+      <img src="../../public/images/top.png" alt="name" class="home__main__profile">
+      <img src="../../public/images/yudainakazaki_black.png" class="home__main__name-mobile" />
     </div>
-    <img src="../../public/images/yudainakazaki.png" class="home__name">
-    <img src="../../public/images/top.png" alt="name" class="home__profile">
+    <div class="home__sub">
+      <p class="home__sub__description">
+        This is Yudai, <br>
+        who loves making something beautiful and making people laugh :D <br>
+        <span class="spacer"/>
+        I am originally from Tokyo and currently live in Amsterdam. <br>
+        <span class="spacer"/>
+        My interest is in Software Engineering, Natural Language Processing, Theory of Comedy, etc.
+      </p>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+
 .home {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  width: 66.8%;
+  min-height: calc(100vh - 180px);
 
-  &__tags {
-    position: absolute;
-    bottom: $spacing-10;
-    left: -40%;
-    display: flex;
-    flex-direction: column;
+  &__main {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    width: 66.8%;
 
-    &__tag {
-      font-size: 18px;
-      font-family: $font-main;
-      margin: 5px;
-      a {
-        text-decoration: none;
-        color: black;
-      }
+    &__name {
+      position: absolute;
+      top: 35%;
+      left: -40%;
+      width: 69.5%;
+      animation: 2s ease-in 0s showUp;
+      transform-origin: left;
+    }
+
+    &__name-mobile {
+      display: none;
+    }
+
+    &__profile {
+      width: 100%;
+      animation: 1s ease-out loadImage;
     }
   }
 
-  &__name {
-    position: absolute;
-    top: 35%;
-    left: -40%;
-    width: 69.5%;
-    animation: 2s ease-in 0s showUp;
-    transform-origin: left;
-  }
+  &__sub {
+    width: 55%;
+    margin: $spacing-13 auto;
 
-  &__profile {
-    width: 100%;
-    animation: 1s ease-out loadImage;
+    &__description {
+      font-size: $font-large;
+      font-family: $font-main;
+      font-weight: 500; 
+      margin: $spacing-13;
+      line-height: 2;
+    }
+  }
+}
+
+@media (max-width: 976px) {
+  .home {
+    &__main {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &__name {
+        display: none;
+      }
+
+      &__name-mobile {
+        margin: $spacing-9 auto;
+        display: block;
+        position: relative;
+        width: 70%;
+        animation: 2s ease-in 0s showUp;
+        transform-origin: left;
+      }
+
+      &__profile {
+        width: 100%;
+        animation: 1s ease-out loadImage;
+      }
+    }
+
+    &__sub {
+      width: 90%;
+      margin: auto;
+
+      &__description {
+        font-size: $font-medium;
+        font-family: $font-main;
+        font-weight: 500; 
+        margin: 0 $spacing-13;
+        line-height: 2;
+      }
+    }
   }
 }
 

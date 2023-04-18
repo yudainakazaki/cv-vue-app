@@ -21,12 +21,10 @@ const processIcon = (socialMedia: string) => {
             return 'bxl-instagram';
         case 'linkedin':
             return 'bxl-linkedin';
+        case 'github':
+            return 'bxl-github';
     }
 }
-
-onMounted(() => {
-    console.log(props.listSocialMedia);
-})
 
 </script>
 

@@ -78,4 +78,14 @@ const props = defineProps<{
     }
 
 }
+
+@media (max-width: 976px) {
+    .info-card {
+        width: $width-5;
+
+        &__title {
+            width: 70%;
+        }
+    }
+}
 </style>

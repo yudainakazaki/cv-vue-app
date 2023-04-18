@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+.spacer {
+    display: block;
+    height: $spacing-5;
+}
 
 .link {
     color: black;
@@ -13,10 +17,7 @@
     padding: 4px 0;
     font-weight: 400;
     font-family: $font-main;
-
-    &:hover {
-        cursor: pointer;
-    }
+    cursor: pointer;
 
     &:after {
         content: '';
