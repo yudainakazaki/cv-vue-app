@@ -12,7 +12,7 @@ import { onMounted } from 'vue';
     </div>
     <div class="home__sub">
       <p class="home__sub__description">
-        This is Yudai, <br>
+        I am Yudai, <br>
         who loves making something beautiful and making people laugh :D <br>
         <span class="spacer"/>
         I am originally from Tokyo and currently live in Amsterdam. <br>
@@ -24,7 +24,6 @@ import { onMounted } from 'vue';
 </template>
 
 <style lang="scss" scoped>
-
 .home {
   min-height: calc(100vh - 180px);
 
