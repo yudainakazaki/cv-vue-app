@@ -8,7 +8,7 @@ const copyText = (text: string) => {
 
 <template>
   <div class="contact">
-    <h2 class="contact__msg">I welcome your message via Linkedin and email!</h2>
+    <h2 class="contact__msg">Message me via Linkedin or email</h2>
     <div class="contact__links">
       <a href="https://www.linkedin.com/in/yudainakazaki/" target="_blank" title="linkedin">
         <span class="contact__links__link bx bxl-linkedin"></span>

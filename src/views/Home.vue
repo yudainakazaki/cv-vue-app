@@ -12,12 +12,9 @@ import { onMounted } from 'vue';
     </div>
     <div class="home__sub">
       <p class="home__sub__description">
-        I am Yudai, <br>
-        who loves making something beautiful and making people laugh :D <br>
-        <span class="spacer"/>
-        I am originally from Tokyo and currently live in Amsterdam. <br>
-        <span class="spacer"/>
-        My interest is in Software Engineering, Natural Language Processing, Theory of Comedy, etc.
+        I am Yudai. <br>
+        I am a software developer.
+        #fabrication #software_engineering #im_rarely_john
       </p>
     </div>
   </div>
