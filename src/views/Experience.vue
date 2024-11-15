@@ -86,7 +86,7 @@ import InfoCard from '../components/InfoCard.vue';
       :logo="true"
       title="Software Engineer Internship"
       subtitle1="Fast Retailing"
-      subtitle2="August, 2022 - September, 2023"
+      subtitle2="August, 2022 - September, 2022"
       class="experience__card"
     >
       <template #content>
