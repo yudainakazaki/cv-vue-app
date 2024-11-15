@@ -180,7 +180,7 @@ onMounted(() => {
 			color: white;
 			text-decoration: none;
 			display: block;
-			font-size: 36px;
+			font-size: 24px;
 			font-family: $font-main;
 			font-weight: 500;
 
