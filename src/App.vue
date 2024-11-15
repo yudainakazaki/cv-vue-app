@@ -27,8 +27,8 @@ import Header from "./components/Header.vue";
 <style lang="scss" scoped>
 .footer {
   width: 100%;
-  height: 90px;
-  position: relative;
+  height: 56px;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: center;

@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import router from "../router";
 import { onMounted, ref } from "vue";
-import cv from "../docs/cv.pdf";
 import { listSocialMedia } from "../data/listSocialMedia";
 import SocialMedia from "./SocialMedia.vue";
 
@@ -10,10 +9,6 @@ const routes = router.options.routes;
 const mobile = ref(window.innerWidth <= 976);
 const mobileNav = ref(false);
 const windowWidth = ref(window.innerWidth);
-
-const onCvClick = () => {
-    window.open(cv);
-}
 
 const toggleMobileNav = () => {
     mobileNav.value = !mobileNav.value;
@@ -66,7 +61,7 @@ onMounted(() => {
                         </RouterLink>
                     </nav>
                     <div class="mobile-nav__item">
-                        <a :onclick="onCvClick" target="_blank" class="mobile-nav__item__label" title="CV">CV</a>
+                        <a href="https://flowcv.com/resume/a0uwwj2sc9" target="_blank" class="mobile-nav__item__label" title="CV">CV</a>
                     </div>
                 </div>
             </div>

@@ -29,6 +29,7 @@ const copyText = (text: string) => {
   min-height: calc(100vh - 180px);
   justify-content: center;
   align-items: center;
+  padding-bottom: 56px;
 
   &__msg {
     font-family: $font-main;

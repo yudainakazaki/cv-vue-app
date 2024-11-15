@@ -13,7 +13,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">JavaScript, TypeScript, Python, C++, C, Java, Scala, Matlab, R</p>
+        <p class="skills__card__content">JavaScript, TypeScript, Python, C++, C, Java, Scala</p>
       </template>
       <template #logo>
         <img src="../../public/images/cpp.png" style="height: 30px;" alt="logo" />
@@ -27,7 +27,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">HTML, CSS, Vue.js, React, Redux, Redux-Saga, Node.js</p>
+        <p class="skills__card__content">HTML, CSS, Vue.js, Nuxt.js, React, Next.js, Redux, Redux-Saga, Node.js</p>
       </template>
       <template #logo>
         <img src="../../public/images/frontend.png" style="height: 30px;" alt="logo" />
@@ -69,7 +69,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">Github, Gitlab, Docker</p>
+        <p class="skills__card__content">Github, Gitlab</p>
       </template>
       <template #logo>
         <img src="../../public/images/git.png" style="height: 30px;" alt="logo" />
@@ -125,7 +125,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">English, Chinese, Spanish, Portuguese, Japanese</p>
+        <p class="skills__card__content">English, Chinese, Japanese</p>
       </template>
       <template #logo>
         <img src="../../public/images/language.png" style="height: 30px;" alt="logo" />
@@ -140,6 +140,7 @@ import InfoCard from '../components/InfoCard.vue';
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 56px;
 
   &__card {
     margin: $spacing-6;

@@ -26,6 +26,7 @@ import { onMounted } from 'vue';
 <style lang="scss" scoped>
 .home {
   min-height: calc(100vh - 180px);
+  padding-bottom: 56px;
 
   &__main {
     position: relative;

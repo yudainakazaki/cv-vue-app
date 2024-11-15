@@ -31,16 +31,7 @@ import ItemCard from '../components/ItemCard.vue';
       demo="https://www.youtube.com/watch?v=L6PlV-EJ2o4&t=4s"
     >
       <img class="thumbnail-img" src="../../public/images/worddistancestudio.png" alt="thumbnail" style="width: 100%;"> 
-    </ItemCard>
-    <ItemCard 
-      class="projects__card" 
-      title="Math Exercise App"
-      description="This React app allows users to practice simple math calculations with problems which are randomly produced."
-      code="https://github.com/yudainakazaki/math-exercise-app"
-      demo="https://yudainakazaki.github.io/math-exercise-app/"
-    >
-      <img class="thumbnail-img" src="../../public/images/mathexercise.png" alt="thumbnail" style="width: 100%;"> 
-    </ItemCard>
+    </ItemCard> 
   </div>
 </template>
 
@@ -50,6 +41,7 @@ import ItemCard from '../components/ItemCard.vue';
   flex-wrap: wrap;
   justify-content: center;
   min-height: calc(100vh - 180px);
+  padding-bottom: 56px;
 
   &__card {
     margin: $spacing-6;

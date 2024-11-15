@@ -1,10 +1,5 @@
 <script setup lang="ts">
 import InfoCard from '../components/InfoCard.vue';
-import grades from '../docs/Grades.pdf'
-
-const onGradesClick = () => {
-  window.open(grades);
-}
 </script>
 
 <template>
@@ -16,12 +11,7 @@ const onGradesClick = () => {
           I am pursuing a bachelor's degree in Computer Science 💻 <br />
           I am interested in human computer interaction, natural language processing and software engineering.<br />
         </p>
-        <p class="education__card__content">
-          GPA : 8.6 / 10 (As of December, 2022)
-        </p>
-        <span>
-          <a :onclick="onGradesClick" class="link" target="_blank">→ My transcript</a>
-        </span>
+        <p class="education__card__content">GPA : 8.6 / 10</p>
       </template>
       <template #logo>
         <a href="https://vu.nl/en" target="_blank">
@@ -64,6 +54,7 @@ const onGradesClick = () => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 56px;
 
   &__card {
     margin: $spacing-6;

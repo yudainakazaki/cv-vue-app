@@ -36,7 +36,7 @@ const props = defineProps<{
     height: fit-content;
     border-radius: $spacing-3;
     background-color: white;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     padding: $spacing-6;
     position: relative;
 

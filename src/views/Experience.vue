@@ -8,6 +8,61 @@ import InfoCard from '../components/InfoCard.vue';
     <InfoCard
       size="large"
       :logo="true"
+      title="IT Engineer II"
+      subtitle1="ABN AMRO Bank"
+      subtitle2="November, 2024 - present"
+      class="experience__card"
+    >
+      <template #content></template>
+      <template #logo>
+        <a href="https://www.abnamro.nl/nl/prive/index.html" target="_blank">
+          <img src="../../public/images/abnamro.png" style="height: 50px;" alt="logo" />
+        </a>
+      </template>
+    </InfoCard>
+    <InfoCard
+      size="large"
+      :logo="true"
+      title="IT Engineer I"
+      subtitle1="ABN AMRO Bank"
+      subtitle2="July, 2023 - October, 2024"
+      class="experience__card"
+    >
+      <template #content>
+        <p class="experience__card__content">
+          Developed high-performance, server-side rendered web applications, including abnamro.nl, using Vue3 and Nuxt.js, managed infrastructure and CI/CD pipelines on Azure to ensure smooth deployment and operational efficiency, and collaborated closely with content managers and UI/UX designers.
+        </p>
+        <p class="experience__card__content">Tech stack: Vue 3, Nuxt 3, Vitest, Playwright, Azure</p>
+      </template>
+      <template #logo>
+        <a href="https://www.abnamro.nl/nl/prive/index.html" target="_blank">
+          <img src="../../public/images/abnamro.png" style="height: 50px;" alt="logo" />
+        </a>
+      </template>
+    </InfoCard>
+    <InfoCard
+      size="large"
+      :logo="true"
+      title="Research Internship"
+      subtitle1="Triply"
+      subtitle2="April, 2023 - June, 2023"
+      class="experience__card"
+    >
+      <template #content>
+        <p class="experience__card__content">
+          Conducted research, design, and development of a web application to bridge the gap between end-users and linked data, working closely with linked data specialists and domain users to ensure alignment with user needs.
+        </p>
+        <p class="experience__card__content">Tech stack: React, Next.js, SPARQL</p>
+      </template>
+      <template #logo>
+        <a href="https://www.abnamro.nl/nl/prive/index.html" target="_blank">
+          <img src="../../public/images/triply.png" style="height: 50px;" alt="logo" />
+        </a>
+      </template>
+    </InfoCard>
+    <InfoCard
+      size="large"
+      :logo="true"
       title="Software Engineer Internship"
       subtitle1="Payaut"
       subtitle2="September, 2022 - February, 2023"
@@ -77,6 +132,7 @@ import InfoCard from '../components/InfoCard.vue';
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 56px;
 
   &__card {
     margin: $spacing-6;
