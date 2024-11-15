@@ -68,6 +68,9 @@ onMounted(() => {
 							title="CV"
 						>CV</a>
 					</div>
+					<div class="chick-container">
+						<a href="https://m.youtube.com/watch?v=v7BY5m2wYx4" class="chick">🐣</a>
+					</div>
 				</div>
 			</div>
 		</Transition>
@@ -161,7 +164,7 @@ onMounted(() => {
 	display: block;
 	min-height: 100%;
 	background-color: black;
-	padding: $spacing-10;
+	padding: $spacing-10 $spacing-10 72px $spacing-10;
 
 	&__item {
 		margin-bottom: $spacing-8;
@@ -213,6 +216,16 @@ onMounted(() => {
 			transition: transform .3s ease-out;
 		}
 
+	}
+}
+
+.chick-container {
+	display: flex;
+	justify-content: center;
+
+	.chick {
+		font-size: 96px;
+		text-decoration: none;
 	}
 }
 
