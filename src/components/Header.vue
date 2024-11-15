@@ -167,7 +167,7 @@ onMounted(() => {
 	padding: $spacing-10 $spacing-10 72px $spacing-10;
 
 	&__item {
-		margin-bottom: $spacing-8;
+		margin-bottom: $spacing-4;
 		position: relative;
 		font-family: $font-main;
 		cursor: pointer;
