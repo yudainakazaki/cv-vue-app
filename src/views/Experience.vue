@@ -55,7 +55,7 @@ import InfoCard from '../components/InfoCard.vue';
         <p class="experience__card__content">Tech stack: React, Next.js, SPARQL</p>
       </template>
       <template #logo>
-        <a href="https://www.abnamro.nl/nl/prive/index.html" target="_blank">
+        <a href="https://triply.cc/" target="_blank">
           <img src="../../public/images/triply.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
@@ -70,7 +70,7 @@ import InfoCard from '../components/InfoCard.vue';
     >
       <template #content>
         <p class="experience__card__content">
-          I work for the merchant experience team which is in charge of all the endpoints development, frontend development, product design, etc.
+          I worked for the merchant experience team which is in charge of all the endpoints development, frontend development, product design, etc.
           I especially worked on the frontend development of the merchant dashboard.
         </p>
         <p class="experience__card__content">Tech stack: Vue, TypeScript, Gitlab</p>

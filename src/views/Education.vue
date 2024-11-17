@@ -5,12 +5,8 @@ import InfoCard from '../components/InfoCard.vue';
 <template>
   <div class="education">
     <InfoCard size="large" :logo="true" title="Vrije University Amsterdam"
-      subtitle1="BSc in Computer Science" subtitle2="August, 2020 - present" class="education__card">
+      subtitle1="BSc in Computer Science" subtitle2="August, 2020 - June, 2023" class="education__card">
       <template #content>
-        <p class="education__card__content">
-          I am pursuing a bachelor's degree in Computer Science 💻 <br />
-          I am interested in human computer interaction, natural language processing and software engineering.<br />
-        </p>
         <p class="education__card__content">GPA : 8.6 / 10</p>
       </template>
       <template #logo>

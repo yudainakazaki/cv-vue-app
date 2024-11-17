@@ -27,7 +27,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">HTML, CSS, Vue.js, Nuxt.js, React, Next.js, Redux, Redux-Saga, Node.js</p>
+        <p class="skills__card__content">HTML, CSS, Vue.js, Nuxt.js, React, Next.js, Node.js</p>
       </template>
       <template #logo>
         <img src="../../public/images/frontend.png" style="height: 30px;" alt="logo" />
