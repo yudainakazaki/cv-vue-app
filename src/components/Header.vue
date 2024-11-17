@@ -75,8 +75,15 @@ onMounted(() => {
 			<SocialMedia :list-social-media="listSocialMedia" />
 		</div>
 		<div class="menu-icon">
-			<span v-show="mobile" @click="toggleMobileNav" class="bx bx-chevrons-left menu-icon__icon"
-				:class="{ 'menu-icon__icon--active': mobileNav }"></span>
+			<span 
+				v-show="mobile"
+				@click="toggleMobileNav"
+				class="menu-icon__icon bx"
+				:class="{
+					'menu-icon__icon--active bx-x': mobileNav,
+					'bx-menu': !mobileNav,
+				}"
+			></span>
 		</div>
 	</header>
 </template>
@@ -88,7 +95,7 @@ onMounted(() => {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 90px;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
@@ -133,13 +140,13 @@ onMounted(() => {
 		background-color: black;
 
 		&__icon {
-			font-size: 64px;
-			width: 90px;
-			height: 90px;
+			font-size: 36px;
+			width: 60px;
+			height: 60px;
 			cursor: pointer;
 			color: white;
 			text-align: center;
-			line-height: 90px;
+			line-height: 60px;
 			transition: 0.6s ease all;
 
 			&--active {
@@ -150,18 +157,19 @@ onMounted(() => {
 }
 
 .nav-wrapper {
-	height: calc(100vh - 90px);
+	height: calc(100vh - 60px);
 	width: 100%;
-	top: 90px;
+	top: 60px;
 	position: fixed;
 	overflow-y: scroll;
 }
 
 .mobile-nav {
 	display: block;
-	min-height: 100%;
+	min-height: calc(100vh - 60px);
 	background-color: black;
-	padding: $spacing-10 $spacing-10 72px $spacing-10;
+	padding: $spacing-10;
+	box-sizing: border-box;
 
 	&__item {
 		margin-bottom: $spacing-4;

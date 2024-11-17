@@ -1,6 +1,4 @@
 <script setup lang="ts" >
-import { onMounted } from 'vue';
-
 
 const props = defineProps<{
     listSocialMedia?: socialMediaType[];
@@ -40,7 +38,7 @@ const processIcon = (socialMedia: string) => {
 
 <style lang="scss" scoped>
 .social-media {
-    height: 90px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;

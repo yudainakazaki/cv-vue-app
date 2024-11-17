@@ -2,7 +2,6 @@
 import { RouterView } from "vue-router";
 import 'boxicons';
 import Header from "./components/Header.vue";
-
 </script>
 
 <template>
@@ -48,7 +47,6 @@ import Header from "./components/Header.vue";
   0% {
     width: 0%;
   }
-
   100% {
     width: 100%;
   }
