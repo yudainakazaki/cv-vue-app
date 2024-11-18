@@ -141,6 +141,7 @@ import InfoCard from '../components/InfoCard.vue';
   justify-content: center;
   margin-top: $spacing-8;
   padding-bottom: 56px;
+  margin-bottom: $spacing-6;
   gap: $spacing-6;
 
   &__card {

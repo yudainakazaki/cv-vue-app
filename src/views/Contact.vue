@@ -1,9 +1,8 @@
 <script setup lang="ts">
-
 const copyText = (text: string) => {
   navigator.clipboard.writeText(text);
+  alert("Copied!");
 }
-
 </script>
 
 <template>
@@ -16,8 +15,9 @@ const copyText = (text: string) => {
       <span 
         class="contact__links__link bx bxl-gmail" 
         title="Copy udainakazaki@gmail.com"
-        :onclick="copyText('udainakazaki@gmail.com')">
-      </span>
+        aria-label="udainakazaki@gmail.com"
+        @click="copyText('udainakazaki@gmail.com')"
+      ></span>
     </div>
   </div>
 </template>

@@ -42,6 +42,7 @@ import ItemCard from '../components/ItemCard.vue';
   justify-content: center;
   min-height: calc(100vh - 180px);
   margin-top: $spacing-8;
+  margin-bottom: $spacing-6;
   padding-bottom: 56px;
   gap: $spacing-6;
 
