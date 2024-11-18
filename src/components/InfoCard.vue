@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps<{
     size: string;
     logo?: boolean;
@@ -8,7 +7,6 @@ const props = defineProps<{
     subtitle2?: string;
     fixHeight?: boolean;
 }>();
-
 </script>
 
 <template>

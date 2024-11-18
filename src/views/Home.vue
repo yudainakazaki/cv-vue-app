@@ -53,13 +53,12 @@ import { onMounted } from 'vue';
   &__sub {
     width: 55%;
     margin: $spacing-13 auto;
-    padding-bottom: 36px;
 
     &__description {
       font-size: $font-large;
       font-family: $font-main;
       font-weight: 500; 
-      margin: $spacing-13;
+      margin: $spacing-13 0;
       line-height: 2;
     }
   }

@@ -41,11 +41,9 @@ import ItemCard from '../components/ItemCard.vue';
   flex-wrap: wrap;
   justify-content: center;
   min-height: calc(100vh - 180px);
+  margin-top: $spacing-8;
   padding-bottom: 56px;
-
-  &__card {
-    margin: $spacing-6;
-  }
+  gap: $spacing-6;
 
   .thumbnail-img {
     background-color: azure;

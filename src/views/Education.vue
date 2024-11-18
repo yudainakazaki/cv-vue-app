@@ -50,10 +50,11 @@ import InfoCard from '../components/InfoCard.vue';
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: $spacing-8;
   padding-bottom: 56px;
 
   &__card {
-    margin: $spacing-6;
+    margin-bottom: $spacing-6;
 
     &__content {
       font-size: $font-small;

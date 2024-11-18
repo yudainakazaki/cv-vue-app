@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import InfoCard from '../components/InfoCard.vue';
-
 </script>
 
 <template>
@@ -140,11 +139,11 @@ import InfoCard from '../components/InfoCard.vue';
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: $spacing-8;
   padding-bottom: 56px;
+  gap: $spacing-6;
 
   &__card {
-    margin: $spacing-6;
-
     &__content {
       font-size: $font-medium;
       font-family: $font-main;
