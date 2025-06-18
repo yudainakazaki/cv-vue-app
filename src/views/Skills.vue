@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import InfoCard from '../components/InfoCard.vue';
 </script>
-
 <template>
   <div class="skills">
     <InfoCard
@@ -110,7 +109,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">SQL, BigQuery</p>
+        <p class="skills__card__content">SQL, SPARQL</p>
       </template>
       <template #logo>
         <img src="../../public/images/database.png" style="height: 30px;" alt="logo" />
@@ -138,7 +137,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">English, Chinese, Japanese</p>
+        <p class="skills__card__content">English, Japanese</p>
       </template>
       <template #logo>
         <img src="../../public/images/language.png" style="height: 30px;" alt="logo" />
