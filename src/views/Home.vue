@@ -14,7 +14,6 @@ import { onMounted } from 'vue';
       <p class="home__sub__description">
         I am Yudai. <br>
         I am a software developer. <br>
-        #fabrication #software_engineering #im_rarely_john
       </p>
     </div>
   </div>

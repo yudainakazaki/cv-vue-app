@@ -12,7 +12,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">JavaScript, TypeScript, Python, C++, C, Java, Scala</p>
+        <p class="skills__card__content">JavaScript, TypeScript, Python, C++, Java</p>
       </template>
       <template #logo>
         <img src="../../public/images/cpp.png" style="height: 30px;" alt="logo" />
@@ -62,13 +62,13 @@ import InfoCard from '../components/InfoCard.vue';
     </InfoCard>
     <InfoCard
       size="medium"
-      title="CI/CD"
+      title="CI / CD"
       :logo="true"
       :fix-height="true"
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">Github, Gitlab</p>
+        <p class="skills__card__content">Github, Gitlab, Azure DevOps</p>
       </template>
       <template #logo>
         <img src="../../public/images/git.png" style="height: 30px;" alt="logo" />
@@ -82,10 +82,24 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">Cypress.js, Selenium</p>
+        <p class="skills__card__content">Jest, Vitest, Playwright, Cypress.js, Selenium</p>
       </template>
       <template #logo>
         <img src="../../public/images/test.png" style="height: 30px;" alt="logo" />
+      </template>
+    </InfoCard>
+    <InfoCard
+      size="medium"
+      title="Cloud Services / DevOps"
+      :logo="true"
+      :fix-height="true"
+      class="skills__card"
+    >
+      <template #content>
+        <p class="skills__card__content">Azure</p>
+      </template>
+      <template #logo>
+        <img src="../../public/images/cloud-computing.png" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
     <InfoCard
@@ -96,7 +110,7 @@ import InfoCard from '../components/InfoCard.vue';
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">SQL, BigQuery, Firebase</p>
+        <p class="skills__card__content">SQL, BigQuery</p>
       </template>
       <template #logo>
         <img src="../../public/images/database.png" style="height: 30px;" alt="logo" />
