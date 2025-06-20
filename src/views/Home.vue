@@ -13,7 +13,8 @@ import { onMounted } from 'vue';
     <div class="home__sub">
       <p class="home__sub__description">
         I am Yudai. <br>
-        I am a software developer. <br>
+        I am a software engineer. <br>
+        I am a native samurai.
       </p>
     </div>
   </div>
@@ -52,6 +53,8 @@ import { onMounted } from 'vue';
   &__sub {
     width: 55%;
     margin: $spacing-13 auto;
+    display: flex;
+    justify-content: center;
 
     &__description {
       font-size: $font-large;
