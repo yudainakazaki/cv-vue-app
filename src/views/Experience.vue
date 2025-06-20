@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import InfoCard from '../components/InfoCard.vue';
-import experiences from '../data/contents/experience';
+import experiences from '../data/contents/experiences';
 </script>
 
 <template>
@@ -45,4 +45,4 @@ import experiences from '../data/contents/experience';
     }
   }
 }
-</style>
+</style>../data/contents/experiences
