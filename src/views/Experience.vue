@@ -1,126 +1,26 @@
 <script setup lang="ts">
 import InfoCard from '../components/InfoCard.vue';
-
+import experiences from '../data/contents/experience';
 </script>
 
 <template>
   <div class="experience">
     <InfoCard
+      v-for="(item, index) in experiences"
+      :key="index"
       size="large"
       :logo="true"
-      title="IT Engineer II"
-      subtitle1="ABN AMRO Bank"
-      subtitle2="November, 2024 - present"
-      class="experience__card"
-    >
-      <template #content></template>
-      <template #logo>
-        <a href="https://www.abnamro.nl/nl/prive/index.html" target="_blank">
-          <img src="../../public/images/abnamro.png" style="height: 50px;" alt="logo" />
-        </a>
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="large"
-      :logo="true"
-      title="IT Engineer I"
-      subtitle1="ABN AMRO Bank"
-      subtitle2="July, 2023 - October, 2024"
+      :title="item.title"
+      :subtitle1="item.employer"
+      :subtitle2="item.period"
       class="experience__card"
     >
       <template #content>
-        <p class="experience__card__content">
-          Developed high-performance, server-side rendered web applications, including abnamro.nl, using Vue3 and Nuxt.js, managed infrastructure and CI/CD pipelines on Azure to ensure smooth deployment and operational efficiency, and collaborated closely with content managers and UI/UX designers.
-        </p>
-        <p class="experience__card__content">Tech stack: Vue 3, Nuxt 3, Vitest, Playwright, Azure</p>
+        <div v-html="item.description" class="experience__card__content"></div>
       </template>
       <template #logo>
-        <a href="https://www.abnamro.nl/nl/prive/index.html" target="_blank">
-          <img src="../../public/images/abnamro.png" style="height: 50px;" alt="logo" />
-        </a>
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="large"
-      :logo="true"
-      title="Research Internship"
-      subtitle1="Triply"
-      subtitle2="April, 2023 - June, 2023"
-      class="experience__card"
-    >
-      <template #content>
-        <p class="experience__card__content">
-          Conducted research, design, and development of a web application to bridge the gap between end-users and linked data, working closely with linked data specialists and domain users to ensure alignment with user needs.
-        </p>
-        <p class="experience__card__content">Tech stack: React, Next.js, SPARQL</p>
-      </template>
-      <template #logo>
-        <a href="https://triply.cc/" target="_blank">
-          <img src="../../public/images/triply.png" style="height: 50px;" alt="logo" />
-        </a>
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="large"
-      :logo="true"
-      title="Software Engineer Internship"
-      subtitle1="Payaut"
-      subtitle2="September, 2022 - February, 2023"
-      class="experience__card"
-    >
-      <template #content>
-        <p class="experience__card__content">
-          I worked for the merchant experience team which is in charge of all the endpoints development, frontend development, product design, etc.
-          I especially worked on the frontend development of the merchant dashboard.
-        </p>
-        <p class="experience__card__content">Tech stack: Vue, TypeScript, Gitlab</p>
-      </template>
-      <template #logo>
-        <a href="https://payaut.com/" target="_blank">
-          <img src="../../public/images/payaut.jpeg" style="height: 50px;" alt="logo" />
-        </a>
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="large"
-      :logo="true"
-      title="Software Engineer Internship"
-      subtitle1="Fast Retailing"
-      subtitle2="August, 2022 - September, 2022"
-      class="experience__card"
-    >
-      <template #content>
-        <p class="experience__card__content">
-          I was a part of the frontend development team which makes single page applications of EC sites for all the brands such as UNIQLO and GU. 
-          I was in charge of debugging and adding new features for the single page application.
-        </p>
-        <p class="experience__card__content">Tech stack: React, Redux, TypeScript, Github</p>
-      </template>
-      <template #logo>
-        <a href="https://www.fastretailing.com/eng/" target="_blank">
-          <img src="../../public/images/fr.png" style="height: 50px;" alt="logo" />
-        </a>
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="large"
-      :logo="true"
-      title="BizOps Internship"
-      subtitle1="HR Force"
-      subtitle2="February, 2020 - September, 2020"
-      class="experience__card"
-    >
-      <template #content>
-        <p class="experience__card__content">
-          I worked on the management and Configuration of CRM on Salesforce, 
-          retrieving data from the World Wide Web for business development, 
-          data analytics on the relationship between specific Japanese words and CVR of the job openings on the owned media, etc.
-        </p>
-        <p class="experience__card__content">Tech stack: Salesforce, Python, Pandas, word2vec, selenium, bs4</p>
-      </template>
-      <template #logo>
-        <a href="https://www.hr-force.co.jp/" target="_blank">
-          <img src="../../public/images/hrforce.jpeg" style="height: 50px;" alt="logo" />
+        <a :href="item.url" target="_blank" rel="noopener noreferrer">
+          <img :src="item.imagePath" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
