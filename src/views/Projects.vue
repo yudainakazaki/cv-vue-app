@@ -12,7 +12,7 @@ import ItemCard from '../components/ItemCard.vue';
       code="https://github.com/yudainakazaki/cv-vue-app" 
       demo="https://yudainakazaki.com/" 
     >
-      <img class="thumbnail-img" src="../../public/images/yudainakazakicom.png" alt="thumbnail" style="width: 100%;"> 
+      <img class="thumbnail-img" src="/images/yudainakazakicom.png" alt="thumbnail" style="width: 100%;"> 
     </ItemCard>
     <ItemCard 
       class="projects__card" 
@@ -21,7 +21,7 @@ import ItemCard from '../components/ItemCard.vue';
       code="https://github.com/yudainakazaki/word2vec-api"
       demo="https://www.youtube.com/watch?v=L6PlV-EJ2o4&t=4s"
     >
-      <img class="thumbnail-img" src="../../public/images/word2vec.png" alt="thumbnail" style="width: 100%;"> 
+      <img class="thumbnail-img" src="/images/word2vec.png" alt="thumbnail" style="width: 100%;"> 
     </ItemCard>
     <ItemCard 
       class="projects__card" 
@@ -30,7 +30,7 @@ import ItemCard from '../components/ItemCard.vue';
       code="https://github.com/yudainakazaki/word2vec-app"
       demo="https://www.youtube.com/watch?v=L6PlV-EJ2o4&t=4s"
     >
-      <img class="thumbnail-img" src="../../public/images/worddistancestudio.png" alt="thumbnail" style="width: 100%;"> 
+      <img class="thumbnail-img" src="/images/worddistancestudio.png" alt="thumbnail" style="width: 100%;"> 
     </ItemCard> 
   </div>
 </template>

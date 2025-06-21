@@ -6,9 +6,9 @@ import { onMounted } from 'vue';
 <template>
   <div class="home">
     <div class="home__main">
-      <img src="../../public/images/yudainakazaki.png" class="home__main__name">
-      <img src="../../public/images/top.png" alt="name" class="home__main__profile">
-      <img src="../../public/images/yudainakazaki_black.png" class="home__main__name-mobile" />
+      <img src="/images/yudainakazaki.png" class="home__main__name">
+      <img src="/images/top.png" alt="name" class="home__main__profile">
+      <img src="/images/yudainakazaki_black.png" class="home__main__name-mobile" />
     </div>
     <div class="home__sub">
       <p class="home__sub__description">

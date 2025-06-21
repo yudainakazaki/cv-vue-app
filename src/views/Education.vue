@@ -11,7 +11,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://vu.nl/en" target="_blank">
-          <img src="../../public/images/vu.png" style="height: 50px;" alt="logo" />
+          <img src="/images/vu.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -24,7 +24,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://www.keio.ac.jp/en/" target="_blank">
-          <img src="../../public/images/keio.png" style="height: 50px;" alt="logo" />
+          <img src="/images/keio.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
@@ -37,7 +37,7 @@ import InfoCard from '../components/InfoCard.vue';
       </template>
       <template #logo>
         <a href="https://www.ucr.edu/" target="_blank">
-          <img src="../../public/images/ucr.png" style="height: 50px;" alt="logo" />
+          <img src="/images/ucr.png" style="height: 50px;" alt="logo" />
         </a>
       </template>
     </InfoCard>
