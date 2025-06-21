@@ -1,146 +1,23 @@
 <script setup lang="ts">
 import InfoCard from '../components/InfoCard.vue';
+import { skills } from '../data/contents/skills';
 </script>
 <template>
   <div class="skills">
     <InfoCard
+      v-for="(skill, index) in skills"
+      :key="index"
       size="medium"
-      title="Programming language"
+      :title="skill.title"
       :logo="true"
       :fix-height="true"
       class="skills__card"
     >
       <template #content>
-        <p class="skills__card__content">JavaScript, TypeScript, Python, C++, Java</p>
+        <div v-html="skill.content" class="skills__card__content"></div>
       </template>
       <template #logo>
-        <img src="../../public/images/cpp.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="Frontend development"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">HTML, CSS, Vue.js, Nuxt.js, React, Next.js, Node.js</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/frontend.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="Product design"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">Figma</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/figma.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>    
-    <InfoCard
-      size="medium"
-      title="Backend development"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">Express.js, Django, Spring Boot</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/backend.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="CI / CD"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">Github, Gitlab, Azure DevOps</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/git.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="Testing"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">Jest, Vitest, Playwright, Cypress.js, Selenium</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/test.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="Cloud Services / DevOps"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">Azure</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/cloud-computing.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="Database"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">SQL, SPARQL</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/database.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="Buisiness / Data Analytics"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">Pandas, Numpy, Selenium, bs4, Salesforce.com</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/data.png" style="height: 30px;" alt="logo" />
-      </template>
-    </InfoCard>
-    <InfoCard
-      size="medium"
-      title="Language"
-      :logo="true"
-      :fix-height="true"
-      class="skills__card"
-    >
-      <template #content>
-        <p class="skills__card__content">English, Japanese</p>
-      </template>
-      <template #logo>
-        <img src="../../public/images/language.png" style="height: 30px;" alt="logo" />
+        <img :src="skill.logoPath" style="height: 30px;" alt="logo" />
       </template>
     </InfoCard>
   </div>
