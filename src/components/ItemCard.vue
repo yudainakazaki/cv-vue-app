@@ -19,10 +19,10 @@ const props = defineProps<{
         <h2 class="item-card__title">{{ props.title }}</h2>
         <p class="item-card__description">{{ props.description }}</p>
         <div class="item-card__links">
-            <a :href="props.code" target="_blank" title="source code">
+            <a v-if="props.code" :href="props.code" target="_blank" title="source code">
                 <span class="item-card__links__link bx bx-code" />
             </a>
-            <a :href="props.demo" target="_blank" title="demo">
+            <a v-if="props.demo" :href="props.demo" target="_blank" title="demo">
                 <span class="item-card__links__link bx bx-desktop" />
             </a> 
         </div>
@@ -32,7 +32,7 @@ const props = defineProps<{
 <style lang="scss" scoped>
 
 .item-card {
-    height: $width-6;
+    height: $width-7;
     width: $width-5;
     border-radius: $spacing-3;
     background-color: white;
@@ -44,7 +44,8 @@ const props = defineProps<{
     &__thumbnail {
         height: $width-3;
         overflow: hidden;
-        border-radius: $spacing-3;
+        border-radius: $spacing-3 $spacing-3 0 0;
+        margin-bottom: $spacing-5;
     }
 
     &__title {

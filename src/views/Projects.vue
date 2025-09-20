@@ -32,6 +32,14 @@ import ItemCard from '../components/ItemCard.vue';
     >
       <img class="thumbnail-img" src="/images/worddistancestudio.png" alt="thumbnail" style="width: 100%;"> 
     </ItemCard> 
+     <ItemCard 
+      class="projects__card" 
+      title="ABN AMRO Bank Websites"
+      description="The retail websites of ABN AMRO Bank in the Netherlands. "
+      demo="https://www.abnamro.nl/nl/prive/index.html"
+    >
+      <img class="thumbnail-img" src="/images/abnamronlwebsite.png" alt="thumbnail" style="width: 100%;"> 
+    </ItemCard> 
   </div>
 </template>
 
