@@ -12,7 +12,7 @@ export const skills: Skill[] = [
   },
   {
     title: "Frontend development",
-    content: "<p>HTML, CSS, Vue.js, Nuxt.js, React, Next.js, Node.js</p>",
+    content: "<p>HTML, CSS, Vue.js, Nuxt.js, React, Next.js, Angular, Node.js</p>",
     logoPath: "/images/frontend.png"
   },
   {
@@ -22,7 +22,7 @@ export const skills: Skill[] = [
   },
   {
     title: "Backend development",
-    content: "<p>Express.js, Django, Spring Boot</p>",
+    content: "<p>Node.js, Express.js, Django, Spring Boot</p>",
     logoPath: "/images/backend.png"
   },
   {
