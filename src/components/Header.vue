@@ -11,230 +11,244 @@ const mobileNav = ref(false);
 const windowWidth = ref(window.innerWidth);
 
 const toggleMobileNav = () => {
-	mobileNav.value = !mobileNav.value;
-	if (mobileNav.value) document.body.style.overflowY = 'hidden';
-	else document.body.style.overflowY = 'visible';
-}
+  mobileNav.value = !mobileNav.value;
+  if (mobileNav.value) document.body.style.overflowY = "hidden";
+  else document.body.style.overflowY = "visible";
+};
 
 const checkScreenWidth = () => {
-	windowWidth.value = window.innerWidth;
-	if (windowWidth.value <= 976) {
-		mobile.value = true;
-	} else {
-		mobile.value = false;
-		mobileNav.value = false;
-	}
-	return
-}
+  windowWidth.value = window.innerWidth;
+  if (windowWidth.value <= 976) {
+    mobile.value = true;
+  } else {
+    mobile.value = false;
+    mobileNav.value = false;
+  }
+  return;
+};
 
 const scrollToTop = () => {
-	window.scrollTo(0, 0);
-}
+  window.scrollTo(0, 0);
+};
 
 onMounted(() => {
-	window.addEventListener("resize", checkScreenWidth);
-	checkScreenWidth;
-})
+  window.addEventListener("resize", checkScreenWidth);
+  checkScreenWidth;
+});
 </script>
 
 <template>
-	<header class="header">
-		<div v-show="!mobile" class="header__nav">
-			<nav v-for="(item, i) in routes" :key="i" class="header__nav__item">
-				<RouterLink :to="{ path: item.path }" class="header__nav__item__label link" :title="item.name"
-					@click="scrollToTop">
-					{{ item.name }}
-				</RouterLink>
-			</nav>
-			<label class="header__nav__item">
-				<a href="https://flowcv.com/resume/a0uwwj2sc9" target="_blank" class="header__nav__item__label link"
-					title="CV">CV</a>
-			</label>
-		</div>
-		<Transition name="fade" mode="out-in">
-			<div v-show="mobileNav" class="nav-wrapper" @touchmove.prevent>
-				<div class="mobile-nav" @click="toggleMobileNav">
-					<nav v-for="(item, i) in routes" :key="i" class="mobile-nav__item">
-						<RouterLink :to="{ path: item.path }" class="mobile-nav__item__label" :title="item.name"
-							@click="scrollToTop">
-							{{ item.name }}
-						</RouterLink>
-					</nav>
-					<div class="mobile-nav__item">
-						<a
-							href="https://flowcv.com/resume/a0uwwj2sc9" 
-							target="_blank"
-							class="mobile-nav__item__label"
-							title="CV"
-						>CV</a>
-					</div>
-				</div>
-			</div>
-		</Transition>
-		<div class="header__social-media">
-			<SocialMedia :list-social-media="listSocialMedia" />
-		</div>
-		<div class="menu-icon">
-			<span 
-				v-show="mobile"
-				@click="toggleMobileNav"
-				class="menu-icon__icon bx"
-				:class="{
-					'menu-icon__icon--active bx-x': mobileNav,
-					'bx-menu': !mobileNav,
-				}"
-			></span>
-		</div>
-	</header>
+  <header class="header">
+    <div v-show="!mobile" class="header__nav">
+      <nav v-for="(item, i) in routes" :key="i" class="header__nav__item">
+        <RouterLink
+          :to="{ path: item.path }"
+          class="header__nav__item__label link"
+          :title="item.name"
+          @click="scrollToTop"
+        >
+          {{ item.name }}
+        </RouterLink>
+      </nav>
+      <label class="header__nav__item">
+        <a
+          href="https://flowcv.com/resume/a0uwwj2sc9"
+          target="_blank"
+          class="header__nav__item__label link"
+          title="CV"
+          >CV</a
+        >
+      </label>
+    </div>
+    <Transition name="fade" mode="out-in">
+      <div v-show="mobileNav" class="nav-wrapper" @touchmove.prevent>
+        <div class="mobile-nav" @click="toggleMobileNav">
+          <nav v-for="(item, i) in routes" :key="i" class="mobile-nav__item">
+            <RouterLink
+              :to="{ path: item.path }"
+              class="mobile-nav__item__label"
+              :title="item.name"
+              @click="scrollToTop"
+            >
+              {{ item.name }}
+            </RouterLink>
+          </nav>
+          <div class="mobile-nav__item">
+            <a
+              href="https://flowcv.com/resume/a0uwwj2sc9"
+              target="_blank"
+              class="mobile-nav__item__label"
+              title="CV"
+              >CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </Transition>
+    <div class="header__social-media">
+      <SocialMedia :list-social-media="listSocialMedia" />
+    </div>
+    <div class="menu-icon">
+      <span
+        v-show="mobile"
+        @click="toggleMobileNav"
+        class="menu-icon__icon bx"
+        :class="{
+          'menu-icon__icon--active bx-x': mobileNav,
+          'bx-menu': !mobileNav,
+        }"
+      ></span>
+    </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
 .header {
-	position: fixed;
-	z-index: 1000;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 60px;
-	display: flex;
-	justify-content: space-between;
-	background-color: white;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  opacity: 0.9;
 
-	&__nav {
-		display: flex;
-		margin: 0 $spacing-6;
-		height: 100%;
+  &__nav {
+    display: flex;
+    margin: 0 $spacing-6;
+    height: 100%;
 
-		&__item {
-			margin: 0 $spacing-5;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+    &__item {
+      margin: 0 $spacing-5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-			&__label {
-				margin: auto 0;
-				font-weight: 700;
-				line-height: 1.5;
+      &__label {
+        margin: auto 0;
+        font-weight: 700;
+        line-height: 1.5;
 
-				&.router-link-active:after {
-					content: '';
-					position: absolute;
-					width: 100%;
-					height: 1.5px;
-					transform: scaleX(1);
-					transform-origin: bottom left;
-					bottom: 0;
-					left: 0;
-					background-color: black;
-				}
+        &.router-link-active:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1.5px;
+          transform: scaleX(1);
+          transform-origin: bottom left;
+          bottom: 0;
+          left: 0;
+          background-color: black;
+        }
+      }
+    }
+  }
 
-			}
-		}
-	}
+  &__social-media {
+    margin: 0 $spacing-6 0 auto;
+  }
 
-	&__social-media {
-		margin: 0 $spacing-6 0 auto;
-	}
+  .menu-icon {
+    background-color: black;
 
-	.menu-icon {
-		background-color: black;
+    &__icon {
+      font-size: 36px;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      transition: 0.6s ease all;
 
-		&__icon {
-			font-size: 36px;
-			width: 60px;
-			height: 60px;
-			cursor: pointer;
-			color: white;
-			text-align: center;
-			line-height: 60px;
-			transition: 0.6s ease all;
-
-			&--active {
-				transform: rotate(180deg);
-			}
-		}
-	}
+      &--active {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 
 .nav-wrapper {
-	height: calc(100vh - 60px);
-	width: 100%;
-	top: 60px;
-	position: fixed;
-	overflow-y: scroll;
+  height: calc(100vh - 60px);
+  width: 100%;
+  top: 60px;
+  position: fixed;
+  overflow-y: scroll;
 }
 
 .mobile-nav {
-	display: block;
-	min-height: calc(100vh - 60px);
-	background-color: black;
-	padding: $spacing-10;
-	box-sizing: border-box;
+  display: block;
+  min-height: calc(100vh - 60px);
+  background-color: black;
+  padding: $spacing-10;
+  box-sizing: border-box;
 
-	&__item {
-		margin-bottom: $spacing-4;
-		position: relative;
-		font-family: $font-main;
-		cursor: pointer;
-		
-		&:last-child {
-			margin-bottom: 0;
-		}
+  &__item {
+    margin-bottom: $spacing-4;
+    position: relative;
+    font-family: $font-main;
+    cursor: pointer;
 
-		&__label {
-			color: white;
-			text-decoration: none;
-			display: block;
-			font-size: 24px;
-			font-family: $font-main;
-			font-weight: 500;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-			&.router-link-active:after {
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 1.5px;
-				transform: scaleX(1);
-				transform-origin: bottom left;
-				bottom: 0;
-				left: 0;
-				background-color: white;
-			}
-		}
+    &__label {
+      color: white;
+      text-decoration: none;
+      display: block;
+      font-size: 24px;
+      font-family: $font-main;
+      font-weight: 500;
 
-		&:after {
-			content: '';
-			position: absolute;
-			width: 100%;
-			transform: scaleX(0);
-			height: 1.5px;
-			bottom: 0;
-			left: 0;
-			background-color: white;
-			transform-origin: bottom right;
-			transition: transform 0.3s ease-out;
-		}
+      &.router-link-active:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+      }
+    }
 
-		&:hover:after {
-			transform: scaleX(1);
-			transform-origin: bottom left;
-			transition: transform .3s ease-out;
-		}
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1.5px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
 
-	}
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      transition: transform 0.3s ease-out;
+    }
+  }
 }
 
 .fade-enter-to,
 .fade-leave-from {
-	transform: translate(0, 0);
-	transition: transform 0.3s;
+  transform: translate(0, 0);
+  transition: transform 0.3s;
 }
 
 .fade-enter-from,
 .fade-leave-to {
-	transform: translate(100%, 0);
-	transition: transform 0.3s;
+  transform: translate(100%, 0);
+  transition: transform 0.3s;
 }
 
-@media (min-width: 976px) {}
+@media (min-width: 976px) {
+}
 </style>
