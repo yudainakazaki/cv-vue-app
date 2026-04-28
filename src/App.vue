@@ -26,18 +26,19 @@ import Header from "./components/Header.vue";
 <style lang="scss" scoped>
 .footer {
   width: 100%;
-  height: 56px;
   position: fixed;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
+  opacity: 0.9;
 
   &__label {
     margin: auto 0;
     font-family: $font-main;
     font-weight: 600;
+    padding: $spacing-10 0;
   }
 }
 

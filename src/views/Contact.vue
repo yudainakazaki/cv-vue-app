@@ -1,25 +1,34 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
+import Container from "../components/Container.vue";
+
 const copyText = (text: string) => {
   navigator.clipboard.writeText(text);
   alert("Copied!");
-}
+};
 </script>
 
 <template>
-  <div class="contact">
-    <h2 class="contact__msg">Message me via Linkedin or email</h2>
-    <div class="contact__links">
-      <a href="https://www.linkedin.com/in/yudainakazaki/" target="_blank" title="linkedin">
-        <span class="contact__links__link bx bxl-linkedin"></span>
-      </a>
-      <span 
-        class="contact__links__link bx bxl-gmail" 
-        title="Copy udainakazaki@gmail.com"
-        aria-label="udainakazaki@gmail.com"
-        @click="copyText('udainakazaki@gmail.com')"
-      ></span>
+  <Container>
+    <div class="contact">
+      <h2 class="contact__msg">Message me via Linkedin or email.</h2>
+      <div class="contact__links">
+        <a
+          href="https://www.linkedin.com/in/yudainakazaki/"
+          target="_blank"
+          title="linkedin"
+        >
+          <span class="contact__links__link bx bxl-linkedin"></span>
+        </a>
+        <span
+          class="contact__links__link bx bxl-gmail"
+          title="Copy udainakazaki@gmail.com"
+          aria-label="udainakazaki@gmail.com"
+          @click="copyText('udainakazaki@gmail.com')"
+        ></span>
+      </div>
     </div>
-  </div>
+  </Container>
 </template>
 
 <style lang="scss" scoped>
@@ -29,12 +38,11 @@ const copyText = (text: string) => {
   min-height: calc(100vh - 180px);
   justify-content: center;
   align-items: center;
-  padding-bottom: 56px;
+  padding-bottom: 100px;
 
   &__msg {
     font-family: $font-main;
-    font-size: $font-large;
-    margin: $spacing-8;
+    font-size: $font-medium;
   }
 
   &__links {
@@ -44,7 +52,7 @@ const copyText = (text: string) => {
     &__link {
       margin: $spacing-5;
       color: black;
-      font-size: 52px;
+      font-size: 2.5rem;
       transform: scale(1);
       transition: transform 0.3s ease-out;
       position: relative;
@@ -56,10 +64,9 @@ const copyText = (text: string) => {
       }
 
       &:active {
-        transform: scale(.9);
+        transform: scale(0.9);
         transition: transform 0.3s ease-out;
       }
-
     }
   }
 }

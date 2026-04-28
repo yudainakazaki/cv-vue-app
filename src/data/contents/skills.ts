@@ -1,53 +1,40 @@
 export interface Skill {
-  title: string;
-  content: string; // HTML string
-  logoPath: string;
+  name: string;
 }
 
 export const skills: Skill[] = [
-  {
-    title: "Programming language",
-    content: "<p>JavaScript, TypeScript, Python, C++, Java</p>",
-    logoPath: "/images/cpp.png"
-  },
-  {
-    title: "Frontend development",
-    content: "<p>HTML, CSS, Vue.js, Nuxt.js, React, Next.js, Angular, Node.js</p>",
-    logoPath: "/images/frontend.png"
-  },
-  {
-    title: "Product design",
-    content: "<p>Figma</p>",
-    logoPath: "/images/figma.png"
-  },
-  {
-    title: "Backend development",
-    content: "<p>Node.js, Express.js, Django, Spring Boot</p>",
-    logoPath: "/images/backend.png"
-  },
-  {
-    title: "CI / CD",
-    content: "<p>Github, Gitlab, Azure DevOps</p>",
-    logoPath: "/images/git.png"
-  },
-  {
-    title: "Testing",
-    content: "<p>Jest, Vitest, Playwright, Cypress.js, Selenium</p>",
-    logoPath: "/images/test.png"
-  },
-  {
-    title: "Cloud Services / DevOps",
-    content: "<p>Azure</p>",
-    logoPath: "/images/cloud-computing.png"
-  },
-  {
-    title: "Database",
-    content: "<p>SQL, SPARQL</p>",
-    logoPath: "/images/database.png"
-  },
-  {
-    title: "Buisiness / Data Analytics",
-    content: "<p>Pandas, Numpy, Selenium, bs4, Salesforce.com</p>",
-    logoPath: "/images/data.png"
-  }
+  { name: "Azure" },
+  { name: "Azure DevOps" },
+  { name: "bs4" },
+  { name: "C++" },
+  { name: "CSS" },
+  { name: "Cypress.js" },
+  { name: "Django" },
+  { name: "Express.js" },
+  { name: "Figma" },
+  { name: "Github" },
+  { name: "Gitlab" },
+  { name: "HTML" },
+  { name: "Java" },
+  { name: "JavaScript" },
+  { name: "Jest" },
+  { name: "Next.js" },
+  { name: "Node.js" },
+  { name: "Nuxt.js" },
+  { name: "Numpy" },
+  { name: "Pandas" },
+  { name: "Playwright" },
+  { name: "Python" },
+  { name: "React" },
+  { name: "Salesforce" },
+  { name: "SCSS" },
+  { name: "Selenium" },
+  { name: "SPARQL" },
+  { name: "Spring Boot" },
+  { name: "SQL" },
+  { name: "TypeScript" },
+  { name: "Tailwind CSS" },
+  { name: "Vite" },
+  { name: "Vitest" },
+  { name: "Vue.js" },
 ];
