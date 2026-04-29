@@ -7,7 +7,6 @@ import { skills } from "../data/contents/skills";
 <template>
   <Container>
     <section id="skills" class="skills">
-      <h1>Skills</h1>
       <div class="skills__chips">
         <Chip
           v-for="(skill, index) in skills"
@@ -20,17 +19,12 @@ import { skills } from "../data/contents/skills";
 </template>
 
 <style lang="scss" scoped>
-h1 {
-  font-size: $font-medium;
-  font-family: $font-main;
-}
 .skills {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: $spacing-8;
-  padding-bottom: 100px;
   margin-bottom: $spacing-6;
   gap: $spacing-6;
 

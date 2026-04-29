@@ -33,6 +33,7 @@ import experiences from "../data/contents/experiences";
     </div>
   </Container>
 </template>
+
 <style lang="scss" scoped>
 .experience {
   display: flex;
@@ -40,7 +41,7 @@ import experiences from "../data/contents/experiences";
   align-items: center;
   justify-content: center;
   margin-top: $spacing-8;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 
   &__card {
     margin-bottom: $spacing-6;

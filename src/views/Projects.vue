@@ -75,7 +75,7 @@ import Container from "../components/Container.vue";
   justify-content: center;
   margin-top: $spacing-8;
   margin-bottom: $spacing-6;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   gap: $spacing-10;
 
   .thumbnail-img {

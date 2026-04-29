@@ -73,7 +73,7 @@ import Container from "../components/Container.vue";
   align-items: center;
   justify-content: center;
   margin-top: $spacing-8;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 
   &__card {
     margin-bottom: $spacing-6;
