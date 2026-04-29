@@ -6,17 +6,27 @@ import Container from "../components/Container.vue";
 <template>
   <div class="home">
     <div class="home__main">
-      <img src="/images/yudainakazaki.png" class="home__main__name" />
-      <img src="/images/top.png" alt="name" class="home__main__profile" />
+      <img
+        src="/images/yudainakazaki.png"
+        class="home__main__name"
+        loading="eager"
+      />
+      <img
+        src="/images/top.png"
+        alt="name"
+        class="home__main__profile"
+        loading="eager"
+      />
       <img
         src="/images/yudainakazaki_black.png"
         class="home__main__name-mobile"
+        loading="eager"
       />
     </div>
     <Container>
       <p class="home__description">
         I am Yudai. <br />
-        I am a creator, designer, software developer,comedian & native samurai.
+        I am a creator, designer, software developer, comedian & native samurai.
       </p>
     </Container>
   </div>
@@ -25,7 +35,7 @@ import Container from "../components/Container.vue";
 <style lang="scss" scoped>
 .home {
   min-height: calc(100vh - 180px);
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 
   &__main {
     position: relative;
@@ -85,6 +95,10 @@ import Container from "../components/Container.vue";
         width: 100%;
         animation: 1s ease-out loadImage;
       }
+    }
+
+    &__description {
+      margin: 0 0 $spacing-10 0;
     }
   }
 }

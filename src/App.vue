@@ -38,7 +38,7 @@ import Header from "./components/Header.vue";
     margin: auto 0;
     font-family: $font-main;
     font-weight: 600;
-    padding: $spacing-10 0;
+    padding: $spacing-6 0;
   }
 }
 
